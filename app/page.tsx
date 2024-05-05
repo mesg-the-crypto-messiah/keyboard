@@ -1,4 +1,11 @@
+'use client';
+
+import { useEffect } from 'react';
+
 export default function Home() {
+  useEffect(() => {
+    window.alert(navigator.userAgent);
+  });
   return (
     <main className='flex fixed top-0 bottom-0 left-0 right-0'>
       <div className='space-y-20 py-4 px-4 absolute top-0 bottom-20 overflow-scroll '>
